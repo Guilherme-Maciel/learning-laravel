@@ -76,7 +76,7 @@
         @else 
             <li>Variável contém dados</li>
         @endif
-        <!-- O nome dos dados dinâmicos é a chave do array, e não a variável HTML-->
+        <!-- O nome dos dados dinâmicos é a chave do array, e não a variável PHP-->
         </li>
     </body>
 </html>
