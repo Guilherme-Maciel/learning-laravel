@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data = "Exemplo de dado retonado via GET";
+    $var = "";
+    //Retornando dados via get
+    return view('welcome', ['data' => $data, 'var' => $var]);
 });
 
 Route::get('/contact', function () {

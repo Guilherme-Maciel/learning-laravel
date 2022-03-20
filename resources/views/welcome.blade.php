@@ -64,17 +64,19 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <h1>TESTANDO ENGINE BLADE</h1>
+        <ul>
+        @if(10 > 5)
+            <li>TESTANDO IFs</li>
+        @endif
+        <li>{{ $data }}</li>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    ROUTES
-                </div>
-
-                <div class="links">
-                    <a href="/contact">CONTACT</a>
-                </div>
-            </div>
-        </div>
+        @if($var == "")
+            <li>Variável vazia</li>
+        @else 
+            <li>Variável contém dados</li>
+        @endif
+        <!-- O nome dos dados dinâmicos é a chave do array, e não a variável HTML-->
+        </li>
     </body>
 </html>
