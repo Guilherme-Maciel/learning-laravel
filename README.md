@@ -45,7 +45,55 @@ Route::get('/', function () {
             <li>TESTANDO IFs</li>
         @endif
         <li>{{ $data }}</li>
-        <!-- O nome dos dados dinâmicos é a chave do array, e não a variável HTML-->
+        <!-- O nome dos dados dinâmicos é a chave do array, e não a variável PHP-->
         </li>
     </body>
+```
+
+## ESTRUTURA DE REPETIÇÃO
+
+- Enviando um array pela função get, no `web.php`:
+
+<b>FOR:</b>
+
+```html
+    <h1>USO DE ESTRUTURA DE REPETIÇÃO FOR</h1>
+        <h2>FOR</h2>
+        <ul>
+            @for($i = 0; $i < count($arr); $i++)
+                <li>{{$arr[$i]}}</li>
+            @endfor
+        </ul>
+```
+
+<b>FOR EACH</b>
+
+```html
+    <h2>FOR EACH</h2>
+        <ul>
+            @foreach($nomes as $nome)
+                <li>{{$loop->index}} - {{$nome}}</li>
+            @endforeach
+        </ul>
+```
+
+
+## EXECUTAR PHP PURO
+
+- Possibilidade para alcançar resultados além do Blade.
+
+```html
+    <h1>UTILIZANDO PHP PURO</h1>
+        @php
+            $name = "Exemplo de PHP puro";
+            echo $name;
+        @endphp
+```
+
+## COMENTÁRIOS EM BLADE
+
+- Não aparecem na tela do usuário como os do HTML
+
+```
+{{-- COMENTÁRIO BLADE --}}
 ```

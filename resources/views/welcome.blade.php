@@ -19,7 +19,7 @@
                 height: 100vh;
                 margin: 0;
             }
-
+            
             .full-height {
                 height: 100vh;
             }
@@ -64,6 +64,14 @@
         </style>
     </head>
     <body>
+        <nav>
+            <div class="links">
+                <span><h1>USO DE ROTAS: </h1></span>
+                <a href="/products">PRODUCTS</a>
+                <a href="/contact">CONTACT</a>
+            </div>
+
+        </nav>
         <h1>TESTANDO ENGINE BLADE</h1>
         <ul>
         @if(10 > 5)
@@ -78,5 +86,26 @@
         @endif
         <!-- O nome dos dados dinâmicos é a chave do array, e não a variável PHP-->
         </li>
+        </ul>
+        <h1>USO DE ESTRUTURA DE REPETIÇÃO FOR</h1>
+        <h2>FOR</h2>
+        <ul>
+            @for($i = 0; $i < count($arr); $i++)
+                <li>{{$arr[$i]}}</li>
+            @endfor
+        </ul>
+        <h2>FOR EACH</h2>
+        <ul>
+            @foreach($nomes as $nome)
+                <li>{{$loop->index}} - {{$nome}}</li>
+            @endforeach
+        </ul>
+        <h1>UTILIZANDO PHP PURO</h1>
+        @php
+            $name = "Exemplo de PHP puro";
+            echo $name;
+        @endphp
+
+        {{-- Comentário não aparece na tela --}}
     </body>
 </html>
