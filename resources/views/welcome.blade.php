@@ -4,13 +4,7 @@
 
 @section('content')
 
-<nav>
-    <div class="links">
-        <span><h1>USO DE ROTAS: </h1></span>
-        <a href="/products">PRODUCTS</a>
-        <a href="/contact">CONTACT</a>
-    </div>
-</nav>
+
 <h1>TESTANDO ENGINE BLADE</h1>
 <ul>
 @if(10 > 5)

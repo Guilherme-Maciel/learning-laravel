@@ -4,6 +4,6 @@
 
 @section('content')
 
-<p>O usuário está buscando por: {{$busca}}</p>
+<p>Exibindo produto id: {{$id}}</p>
 
 @endsection

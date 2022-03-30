@@ -207,3 +207,31 @@ Nas Views, você pode remover as tags <head>, <body> e <html>, deixando apenas o
 ```
 
 `/css`: acessa a `public/css` 
+
+# RESGATANDO PARÂMETROS DE URL
+- Mudar como uma view nos responde;
+
+<b>PARÂMETROS: </b> `{id}`;
+<b>PARÂMETROS ADICIONAIS: </b> `?`
+<b>QUERY PARAMETERS: </b> `?nome=Matheus&idade=29`
+
+Definir parâmetros em `routes/web.php`
+
+# CONTROLLERS
+- Parte fundamental da aplicação
+- Contêm boa parte da lógica (actions)
+- envia e espera resposta do banco de dados
+- envia e recebe algumas respostas das views
+- Criados via artisan
+
+## CRIAR CONTROLLER
+- php artisan make:controller EventController
+
+:notepad: O carregamento das páginas deve ser de responsabilidade do controller, assim como os métodos HTTP
+
+'''
+php artisan make:controller EventController
+'''
+
+- Irá criar o arquivo `EventController.php` na pasta app/Http/Controllers
+

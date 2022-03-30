@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,23 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $data = "Exemplo de dado retonado via GET";
-    $var = "";
-    $arr = [1,2,3,4,5];
-    $nomes = ["João", "Matheus", "Guilherme", "Pedro", "Gustavo"];
-    //Retornando dados via get
-    return view('welcome', [
-        'data' => $data, 
-        'var' => $var,
-        'arr' => $arr,
-        'nomes' => $nomes]);
-});
+//Irá uilizar o controller e a rota index
+Route::get('/', [EventController::class, 'index']);
+Route::get('/events/create', [EventController::class, 'create']);
+
 
 Route::get('/contact', function () {
     return view('contact');
 });
 
+//Parâmetros do Laravel
+Route::get('/product/{id}', function ($id = 1) {
+    return view('product', ['id' => $id]);
+});
+
+//Parâmetros de URL
 Route::get('/products', function () {
-    return view('products');
+    $busca = request('search');
+
+    return view('products', ['busca' => $busca]);
 });
