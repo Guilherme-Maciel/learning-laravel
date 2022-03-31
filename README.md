@@ -225,7 +225,10 @@ Definir parâmetros em `routes/web.php`
 - Criados via artisan
 
 ## CRIAR CONTROLLER
-- php artisan make:controller EventController
+    
+```
+php artisan make:controller EventController
+```
 
 :notepad: O carregamento das páginas deve ser de responsabilidade do controller, assim como os métodos HTTP
 
