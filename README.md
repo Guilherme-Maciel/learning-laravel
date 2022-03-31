@@ -230,11 +230,7 @@ Definir parâmetros em `routes/web.php`
 php artisan make:controller EventController
 ```
 
-:notepad: O carregamento das páginas deve ser de responsabilidade do controller, assim como os métodos HTTP
-
-'''
-php artisan make:controller EventController
-'''
+📓 O carregamento das páginas deve ser de responsabilidade do controller, assim como os métodos HTTP
 
 - Irá criar o arquivo `EventController.php` na pasta app/Http/Controllers
 
