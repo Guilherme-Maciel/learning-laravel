@@ -235,3 +235,17 @@ php artisan make:controller EventController
 
 - Irá criar o arquivo `EventController.php` na pasta app/Http/Controllers
 
+# CONEXÃO COM BANCO DE DADOS
+
+- Configuradas pelo arquivo .env
+- ORM (Object-Relational Mapping) chamada Eloquent (Query, insert ... do banco)
+- migrations para a criação das tabelas (versionamento do banco de dados)
+
+## TESTANDO AS CONEXÕES DO BANCO
+
+```
+php artisan migrate
+```
+
+- Comando `migrate` cria algumas tabelas no banco
+
