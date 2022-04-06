@@ -254,10 +254,10 @@ php artisan migrate
 
 ### COMANDOS
 
-`fresh`: apaga todos os dados existentes ⚠️
-`rollback`: usado para voltar uma migration
-`reset`: voltar todas as migrations
-`refresh`: voltar todas as migrations e rodar o Migrate novamente.
+`fresh`: apaga todos os dados existentes ⚠️<br>
+`rollback`: usado para voltar uma migration <br>
+`reset`: voltar todas as migrations <br>
+`refresh`: voltar todas as migrations e rodar o Migrate novamente. 
 
 ### CRIANDO TABELA PRODUCTS
 
