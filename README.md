@@ -248,7 +248,7 @@ php artisan migrate
 
 - Comando `migrate` cria algumas tabelas no banco
 
-    ## AVANÇANDO EM MIGRATIONS
+## AVANÇANDO EM MIGRATIONS
 
 - Uma nova migration cria um novo campo na tabela
 
