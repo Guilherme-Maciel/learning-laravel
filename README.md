@@ -248,3 +248,26 @@ php artisan migrate
 
 - Comando `migrate` cria algumas tabelas no banco
 
+    ## AVANÇANDO EM MIGRATIONS
+
+- Uma nova migration cria um novo campo na tabela
+
+### COMANDOS
+
+`fresh`: apaga todos os dados existentes ⚠️
+`rollback`: usado para voltar uma migration
+`reset`: voltar todas as migrations
+`refresh`: voltar todas as migrations e rodar o Migrate novamente.
+
+### CRIANDO TABELA PRODUCTS
+
+```
+php artisan make:migration create_products_table
+```
+
+### ADICIONANDO NOVO CAMPO À PRODUCTS
+
+```
+php artisan make:migration add_category_to_products_table
+```
+
